@@ -20,4 +20,9 @@ return array(
         'value' => '1',
         'mode' => '',
     ),
+
+    'xRobotsTag' => array(
+        'enabled' => true,
+        'value' => 'noodp',
+    ),
 );

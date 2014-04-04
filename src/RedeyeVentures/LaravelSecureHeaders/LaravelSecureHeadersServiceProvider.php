@@ -53,6 +53,11 @@ class LaravelSecureHeadersServiceProvider extends ServiceProvider {
             \App::middleware('RedeyeVentures\LaravelSecureHeaders\Middleware\XXssProtection');
         }
 
+        if (\Config::get('secureheaders::settings.xRobotsTag.enabled'))
+        {
+            \App::middleware('RedeyeVentures\LaravelSecureHeaders\Middleware\XRobotsTag');
+        }
+
     }
 
 	/**

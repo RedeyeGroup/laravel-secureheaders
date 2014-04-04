@@ -1,0 +1,20 @@
+{
+    "name": "redeyeventures/laravel-secureheaders",
+    "description": "This package will automatically apply several headers that are related to security. Based on github.com/twitter/secureheaders",
+    "authors": [
+        {
+            "name": "Redeye Ventures",
+            "email": "hi@redeyeventures.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.1.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "RedeyeVentures\\LaravelSecureHeaders\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}

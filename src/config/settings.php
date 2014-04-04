@@ -25,4 +25,8 @@ return array(
         'enabled' => true,
         'value' => 'noodp',
     ),
+
+    'xDownloadOptions' => array(
+        'enabled' => true,
+    ),
 );

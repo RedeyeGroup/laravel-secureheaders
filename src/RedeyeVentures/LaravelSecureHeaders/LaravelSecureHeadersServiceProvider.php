@@ -58,6 +58,11 @@ class LaravelSecureHeadersServiceProvider extends ServiceProvider {
             \App::middleware('RedeyeVentures\LaravelSecureHeaders\Middleware\XRobotsTag');
         }
 
+        if (\Config::get('secureheaders::settings.xDownloadOptions.enabled'))
+        {
+            \App::middleware('RedeyeVentures\LaravelSecureHeaders\Middleware\XDownloadOptions');
+        }
+
     }
 
 	/**
